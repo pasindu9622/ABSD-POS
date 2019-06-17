@@ -1,57 +1,54 @@
 <br>
-<h1 id="heading1">Add Order</h1>
+<h1 id="heading1">Order</h1>
+<input type="image" id="cusIcon" src="../../../assets/icons8-add-shopping-cart-90.png" alt="Submit">
 <br>
-<div class="one">
-  <div class="form-row">
-    <div class="form-group col-md-4">
-      <label for="inputState">Customer</label>
-      <select id="inputState1"  class="form-control">
-        <option></option>
-        <option>...</option>
-      </select>
-    </div>
+<div>
+  <div class="main1">
+    <div class="form-row">
+      <div class="form-group col-md-5">
 
-  </div>
-  <div class="form-row">
+        <input type="image" id="cusIcon1" src="../../../assets/icons8-customer-filled-100.png" alt="Submit">
 
-    <div class="form-group col-md-4">
-      <label for="inputState">Item</label>
-      <select id="inputState" class="form-control" name="item"  >
-        <option ></option>
-      </select>
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputCity">Qty</label>
-      <input type="text" class="form-control" id="inputCity"name="qty">
-    </div>
+        <select id="inputState" class="form-control" name="item">
+          <option></option>
+        </select>
 
-    <div class="form-group col-md-2">
-      <label for="inputPrice">Price</label>
-      <input type="text" class="form-control"  name="fff" id="inputPrice">
+        <br>
+
+        <input type="image" id="cusIcon2" src="../../../assets/icons8-ingredients-filled-100.png" alt="Submit">
+
+        <select id="inputState1" class="form-control" name="item">
+          <option></option>
+        </select>
+        <br>
+        <input class="form-control" placeholder="QTY" name="qty" required minlength="2">
+        <br>
+        <input class="form-control" placeholder="Description" name="descriptions" brequired minlength="2">
+      </div>
     </div>
   </div>
-  <br>
-  <button type="submit" class="btn btn-primary" >Add to table</button>
-
+  <button type="submit" id="btnSub" class="btn btn-primary">Save</button>
   <br>
   <br>
-  <table class="table table-hover table-bordered">
-    <thead class="thead-dark">
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Qty</th>
-      <th scope="col">Price</th>
-      <!--<th scope="col">Total</th>-->
-    </tr>
-    </thead>
-    <tbody>
-    <tr  >
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    </tbody>
-  </table>
-
-  <h6 class="card-category" style="font-size: xx-large"></h6><button type="submit" class="btn btn-primary" >placeOrder</button>
+  <div class="tableDiv">
+    <table class="table">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First Name</th>
+        <th scope="col">Last Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </tbody>
+    </table>
+  </div>
 </div>

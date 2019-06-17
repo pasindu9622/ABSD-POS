@@ -11,6 +11,7 @@ import { CustomerComponent } from './view/customer/customer.component';
 import { ItemComponent } from './view/item/item.component';
 import { OrderComponent } from './view/order/order.component';
 import { MiddleDashComponent } from './view/middle-dash/middle-dash.component';
+import {CustomerService} from './service/CustomerService';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { MiddleDashComponent } from './view/middle-dash/middle-dash.component';
   ],
   imports: [
     BrowserModule,
-    AppRouting
+    AppRouting,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
