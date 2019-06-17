@@ -1,0 +1,47 @@
+/* Horizontal NavBar */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 110%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+li {
+  text-decoration: none;
+  display: inline-block;
+  margin: 8% 4% -1% 4%;
+  padding: 1%;
+}
+
+/* Adding NavBar Background */
+
+.main-nav {
+  background: #000000;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.6;
+  z-index: 9999;
+  margin: -10%;
+}
+
+/* Setting Hover States */
+
+a:hover {
+  color: #a9a9a9;
+}
+
+a:active {
+  color: #a9a9a9;
+}
+
+/* Body Styles */
+
+/*body {*/
+/*background-image: url("bike.jpg");*/
+/*background-size: 80%;*/
+/*background-repeat: no-repeat;*/
+/*background-position: top;*/
+/*}*/
