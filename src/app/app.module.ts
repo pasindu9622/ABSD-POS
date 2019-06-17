@@ -10,6 +10,7 @@ import {AppRouting} from './router/AppRouting';
 import { CustomerComponent } from './view/customer/customer.component';
 import { ItemComponent } from './view/item/item.component';
 import { OrderComponent } from './view/order/order.component';
+import { MiddleDashComponent } from './view/middle-dash/middle-dash.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { OrderComponent } from './view/order/order.component';
     FooterComponent,
     CustomerComponent,
     ItemComponent,
-    OrderComponent
+    OrderComponent,
+    MiddleDashComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import {FooterComponent} from '../view/footer/footer.component';
 import {CustomerComponent} from '../view/customer/customer.component';
 import {ItemComponent} from '../view/item/item.component';
 import {OrderComponent} from '../view/order/order.component';
+import {MiddleDashComponent} from '../view/middle-dash/middle-dash.component';
 import {NgModule} from '@angular/core';
 
 
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
       {path: 'customer', component: CustomerComponent},
       {path: 'item', component: ItemComponent},
       {path: 'order', component: OrderComponent},
+      {path: 'middle', component: MiddleDashComponent},
 
     ]
   },

@@ -1,0 +1,20 @@
+
+.ng-valid{
+  border-left: 5px solid green;
+}
+
+.ng-invalid{
+  border-left: 5px solid red;
+}
+
+.main1{
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  width: 70%;
+}
+#heading1{
+  position: absolute;
+  top: 10%;
+  left: 2%;
+}
