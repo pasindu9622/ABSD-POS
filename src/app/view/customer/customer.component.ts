@@ -9,8 +9,8 @@ import {CustomerService} from '../../service/CustomerService';
 })
 export class CustomerComponent implements OnInit {
 
-  private customerDTO: CustomerDTO = new CustomerDTO();
-  private customerList: Array<CustomerDTO> = [];
+  customerDTO: CustomerDTO = new CustomerDTO();
+  customerList: Array<CustomerDTO> = [];
 
   constructor(
     private customerService: CustomerService
@@ -22,6 +22,7 @@ export class CustomerComponent implements OnInit {
   }
 
   addCustomer() {
+    alert('work');
     this.customerService.addCustomer(this.customerDTO).subscribe(
       result => {
         if (result) {
@@ -30,5 +31,9 @@ export class CustomerComponent implements OnInit {
 
       }
     );
+  }
+
+  updateCustomer() {
+    alert('work');
   }
 }

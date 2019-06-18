@@ -6,17 +6,15 @@
   <div class="form-row">
     <div class="form-group col-md-5">
 
-      <input class="form-control" placeholder="First Name" name="cusname" required minlength="2">
+      <input class="form-control" placeholder="Name"  name="cusFname" [(ngModel)]="customerDTO.name" required minlength="2" >
       <br>
-      <input class="form-control" placeholder="Last Name" name="cusAddress" required minlength="2">
+      <input class="form-control" placeholder="Address" name="cusAddress" [(ngModel)]="customerDTO.address" required minlength="2">
       <br>
-      <input class="form-control" placeholder="Address" name="cusAddress" required minlength="2">
-      <br>
-      <input class="form-control" placeholder="Tel Nomber" name="cusAddress" brequired minlength="2">
+      <input class="form-control" placeholder="Tel Nomber" name="cusTel" [(ngModel)]="customerDTO.tell" required  minlength="2">
     </div>
   </div>
 </div>
-<button type="submit" id="btnSub" class="btn btn-primary">Save</button>
+<button type="submit" id="btnSub" (click)="addCustomer()" class="btn btn-primary">Save</button>
 <br>
 <br>
 <div class="tableDiv">
@@ -26,7 +24,7 @@
       <th scope="col">#</th>
       <th scope="col">First Name</th>
       <th scope="col">Last Name</th>
-      <th scope="col">Email</th>
+      <th scope="col">Address</th>
       <th scope="col">Mobile</th>
     </tr>
     </thead>

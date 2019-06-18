@@ -12,6 +12,7 @@ import { ItemComponent } from './view/item/item.component';
 import { OrderComponent } from './view/order/order.component';
 import { MiddleDashComponent } from './view/middle-dash/middle-dash.component';
 import {CustomerService} from './service/CustomerService';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import {CustomerService} from './service/CustomerService';
   imports: [
     BrowserModule,
     AppRouting,
-
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
