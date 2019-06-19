@@ -36,3 +36,16 @@
   width: 4%;
   left:8% ;
 }
+#btnUpdat{
+  position: absolute;
+  left: 29.5%;
+  top: 46%;
+}
+#btnDelt{
+  position: absolute;
+  background-color: red;
+  border-color:red ;
+  left: 24%;
+  top: 46%;
+}
+

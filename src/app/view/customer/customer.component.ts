@@ -63,8 +63,14 @@ export class CustomerComponent implements OnInit {
   }
 
   deleteCustomer(id: number) {
-    // alert('ID :----> ' + this.customerDTO.cid);
-    this.customerService.deleteCustomer(id);
+    alert('IDm componont :----> ' + id);
+    this.customerService.deleteCustomer(id).subscribe(relsult => {
+      if (relsult === true) {
+        alert('Customer deleted successfully');
+      } else {
+        alert('Customer deleted failed');
+      }
+    });
   }
 
   loadCustomer(customer) {
