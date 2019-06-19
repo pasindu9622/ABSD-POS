@@ -13,6 +13,9 @@ import { OrderComponent } from './view/order/order.component';
 import { MiddleDashComponent } from './view/middle-dash/middle-dash.component';
 import {CustomerService} from './service/CustomerService';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
+import {HttpModule} from '@angular/http';
 
 
 @NgModule({
@@ -31,7 +34,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     BrowserModule,
     AppRouting,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    RouterModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

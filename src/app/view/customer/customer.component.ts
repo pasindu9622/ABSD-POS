@@ -22,11 +22,13 @@ export class CustomerComponent implements OnInit {
   }
 
   addCustomer() {
-    alert('work');
+    // alert('work');
+    this.customerDTO.cid = 0;
+    console.log(JSON.stringify(this.customerDTO));
     this.customerService.addCustomer(this.customerDTO).subscribe(
       result => {
         if (result) {
-          this.customerList.push(this.customerDTO);
+          alert(JSON.stringify(result));
         }
 
       }
@@ -35,5 +37,14 @@ export class CustomerComponent implements OnInit {
 
   updateCustomer() {
     alert('work');
+  }
+
+  getAll() {
+
+    this.customerService.getAllCustomers().subscribe(result => {
+      this.customerList = result;
+      console.log('Customer List :- ' + JSON.stringify(this.customerList));
+    });
+
   }
 }
