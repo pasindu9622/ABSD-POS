@@ -29,6 +29,11 @@
   left: 31%;
   top: 46%;
 }
+#btnUpdat{
+  position: absolute;
+  left: 30%;
+  top: 46%;
+}
 #cusIcon{
   position: absolute;
   top: 8.5%;

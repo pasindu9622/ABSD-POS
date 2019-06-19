@@ -11,6 +11,7 @@ export class CustomerComponent implements OnInit {
 
   customerDTO: CustomerDTO = new CustomerDTO();
   customerList: Array<CustomerDTO> = [];
+  isEdit: Boolean = false;
 
   constructor(
     private customerService: CustomerService
@@ -19,6 +20,7 @@ export class CustomerComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.getAll();
   }
 
   addCustomer() {
@@ -36,7 +38,17 @@ export class CustomerComponent implements OnInit {
   }
 
   updateCustomer() {
-    alert('work');
+    // this.customerDTO.cid = 0;
+    console.log(this.customerDTO.cid);
+    console.log(JSON.stringify(this.customerDTO));
+    this.customerService.updateCustomer(this.customerDTO).subscribe(
+      result => {
+        if (result) {
+          alert(JSON.stringify(result));
+        }
+
+      }
+    );
   }
 
   getAll() {
@@ -46,5 +58,11 @@ export class CustomerComponent implements OnInit {
       console.log('Customer List :- ' + JSON.stringify(this.customerList));
     });
 
+  }
+
+  loadCustomer(customer) {
+    this.isEdit = true;
+    const obj = this.customerDTO;
+    this.customerDTO = Object.assign(obj, customer);
   }
 }
