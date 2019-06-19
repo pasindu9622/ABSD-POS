@@ -31,7 +31,7 @@
 }
 #btnUpdat{
   position: absolute;
-  left: 30%;
+  left: 29.5%;
   top: 46%;
 }
 #cusIcon{
@@ -40,4 +40,11 @@
   height: 8%;
   width: 4%;
   left:14% ;
+}
+#btnDelt{
+  position: absolute;
+  background-color: red;
+  border-color:red ;
+  left: 24%;
+  top: 46%;
 }

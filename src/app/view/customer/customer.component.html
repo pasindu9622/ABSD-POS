@@ -16,6 +16,7 @@
 </div>
 <button type="submit" *ngIf="!isEdit" id="btnSub" (click)="addCustomer()" class="btn btn-primary">Save</button>
 <button type="submit" *ngIf="isEdit" id="btnUpdat" (click)="updateCustomer()" class="btn btn-primary">Update</button>
+<button type="submit" *ngIf="isEdit" id="btnDelt" (click)="deleteCustomer(customerDTO.cid)" class="btn btn-primary">Delete</button>
 <br>
 <br>
 <div class="tableDiv">

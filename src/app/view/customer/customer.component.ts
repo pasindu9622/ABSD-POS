@@ -12,6 +12,7 @@ export class CustomerComponent implements OnInit {
   customerDTO: CustomerDTO = new CustomerDTO();
   customerList: Array<CustomerDTO> = [];
   isEdit: Boolean = false;
+  customerId: number;
 
   constructor(
     private customerService: CustomerService
@@ -41,6 +42,7 @@ export class CustomerComponent implements OnInit {
     // this.customerDTO.cid = 0;
     console.log(this.customerDTO.cid);
     console.log(JSON.stringify(this.customerDTO));
+    alert(JSON.stringify(this.customerDTO));
     this.customerService.updateCustomer(this.customerDTO).subscribe(
       result => {
         if (result) {
@@ -55,9 +57,14 @@ export class CustomerComponent implements OnInit {
 
     this.customerService.getAllCustomers().subscribe(result => {
       this.customerList = result;
-      console.log('Customer List :- ' + JSON.stringify(this.customerList));
+      console.log('Customer List :- ' + JSON.stringify(this.customerDTO.cid));
     });
 
+  }
+
+  deleteCustomer(id: number) {
+    // alert('ID :----> ' + this.customerDTO.cid);
+    this.customerService.deleteCustomer(id);
   }
 
   loadCustomer(customer) {
